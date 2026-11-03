@@ -1,0 +1,129 @@
+\documentclass[margin,line]{res}
+
+% ---- Page geometry: trim top whitespace, use more of the page ----
+\topmargin -0.6in
+\textheight 10.1in
+\oddsidemargin -.6in
+\evensidemargin -.6in
+\textwidth=6.35in
+\sectionskip=2.2ex plus .4ex minus .2ex
+
+\usepackage[pdftex]{graphicx}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+% ---- Tight lists everywhere ----
+\setlist{nosep}
+\setlist[enumerate]{leftmargin=1.4em}
+\setlist[itemize]{leftmargin=1.1em, label=\textbullet}
+
+% Education entry: degree / institution on one line + date, details on the next
+% \edu{Degree}{Dates}{Institution}{Details}
+\newcommand{\edu}[4]{{\bf #1} \hfill{#2}\\ #3; #4\\[2pt]}
+
+\begin{document}
+
+\name{Sarbajit Ghosh}\vspace*{-.15in}
+
+\begin{resume}
+\section{\sc Contact information}
+\begin{tabular}{@{}p{2.6in}l}
+Department of CSE, IIT Kanpur & {\it E-mail:} sarbajitg@cse.iitk.ac.in\\
+ & {\it Publications:} \href{https://scholar.google.com/citations?user=AVrr4S8AAAAJ&hl=en&oi=ao}{Google Scholar}
+\end{tabular}
+
+\section{\sc Career Vision}
+My research interest aligns with the interplay between \textbf{differential privacy} and \textbf{machine learning}. I like to apply my interdisciplinary background, as well as my abilities, to find creative solutions to complex problems. This way, I like to deeply engage myself in advancing the subject to make a real-world impact. My other interests lie in the broader spectrum of \textbf{privacy-preserving technologies} and \textbf{statistics}.
+
+\section{\sc Academic Background}
+\edu{Ph.D (Pursuing) in Computer Science}{2021 -- Present}
+    {Indian Institute of Technology, Kanpur}{CPI: 8.00}
+\edu{M.Tech in Cryptology and Information Security}{2019 -- 2021}
+    {Indian Statistical Institute, Kolkata}{Marks: 81.35\%, \textbf{First Division with Distinction}}
+\edu{M.Sc (Post Graduation) in Statistics}{2016 -- 2018}
+    {West Bengal State University, Barasat}{Marks: 81.3\%\\ \textbf{Recipient of First-Class First Vice-Chancellor Gold Medal}}
+\edu{B.Sc (Graduation) in Mathematics}{2012 -- 2016}
+    {Rishi Bankim Chandra College, under West Bengal State University}{Marks: 54.63\%}
+\edu{Higher Secondary Examination}{2009 -- 2011}
+    {Naihati Narendra Vidyaniketan, under WBCHSE}{Marks: 72.6\%}
+\edu{Secondary Examination}{2009}
+    {Ramkrishna Vivekananda Mission, under WBBSE}{Marks: 79.38\%}
+{\bf GATE Qualified:} Statistics (2019), Percentile: 98.01; \ Computer Science (2021), Percentile: 87.26
+
+\section{\sc Publications}
+\begin{enumerate}
+    \item A Generalized Unknown Malware Classification. Rani, N., Mishra, A., Kumar, R., \textbf{Ghosh, S.}, Shukla, S.K. and Bagade, P. International Conference on Security and Privacy in Communication Systems (SecureComm), 2022
+\end{enumerate}
+
+\section{\sc Academic Service}
+{\bf Reviewer:} {\bf AsiaCCS Posters}, {\bf ACL} (2026), {\bf FSTTCS} (2025)
+
+\section{\sc Teaching Activities}
+\begin{enumerate}
+\item {\bf Teaching Assistant, CSE, IIT Kanpur}
+\begin{itemize}
+    \item CS729 \& CS798 Differential Privacy in Machine Learning \hfill{Spring 2026, 2025}
+    \item CS787 Generative Artificial Intelligence \hfill{Fall 2025}
+    \item CS685 Data Mining \hfill{Fall 2024, 2021}
+    \item CS689 Computational Linguistics for Indian Languages \hfill{Spring 2024, Fall 2022}
+    \item CS798 Introduction to Probability for Computer Science \hfill{Fall 2023}
+    \item ESC112 Fundamentals of Computing - II \hfill{Summer 2023}
+    \item CS315 Principles of Database Systems \hfill{Spring 2023}
+    \item CS657 Information Retrieval \hfill{Spring 2022}
+\end{itemize}
+\item {\bf Guest Lecturer, Dept.\ of Statistics, Chakdaha Day College}\hfill{Aug 2018 -- Jul 2019}\\
+Kalyani University
+\begin{itemize}
+\item \textbf{Responsibilities:} Teaching, Organising internal \& external examinations
+\item \textbf{Courses taught:} Descriptive statistics \& probability theory, Statistical inference at UG level
+\end{itemize}
+\end{enumerate}
+
+\section{\sc Internship}
+{\bf Statistical Programmer, iMerit Technologies, Kolkata, India}\hfill{Jun 2020 -- Aug 2020}
+\begin{itemize}
+\item \textbf{Project:} An Analysis of Factors that Impact Data Annotation Productivity in Complex CV Projects
+\item \textbf{Domain:} \textbf{Statistical Analysis}, \textbf{Socio-economic Survey}
+\item \textbf{Description:} To model the time per task, in CV projects of an employee, based on project characteristics and some external parameters such as training given by the company, socio-economic profile of that employee, etc as a part of a team
+\item \textbf{Technologies Used:} \textbf{R} packages \textbf{dplyr}, \textbf{ggplot2}, \textbf{caret}, \textbf{Google Sheets}, \textbf{Tableau}, NoSQL database \textbf{MongoDB}
+\end{itemize}
+
+\section{\sc Academic Projects}
+\begin{enumerate}
+\item {\bf Internet voting using Blockchain}\hfill{Spring 2021}\\
+\textbf{Guide:} Dr. Souradyuti Paul, IIT Bhilai
+\begin{itemize}
+\item \textbf{Domain:} \textbf{Secure Multiparty computation}, \textbf{Zero Knowledge Proofs}, \textbf{Blockchain}, \textbf{Internet voting}
+\item \textbf{Description:} Application of Ethereum blockchain, in designing a complete decentralized voting protocol together with related security proofs
+\item \textbf{Technologies Used:} \textbf{Ganache}, \textbf{Truffle}, \textbf{MetaMask}, \textbf{Solidity}, \textbf{W3.JS}
+\end{itemize}
+
+\item {\bf A short survey on Differential Privacy}\hfill{Fall 2020}\\
+\textbf{Supervisor:} Dr. Srimanta Bhattacharya, R. C. Bose Centre for Cryptology and Security
+
+\item {\bf Secure Banking Website}\hfill{Spring 2020}\\
+\textbf{Supervisor:} Dr. Nilanjan Datta, ISI Kolkata\\
+\textbf{Purpose:} To create a banking website which is secure against \textbf{SQL injection}, \textbf{CSRF} and \textbf{Clickjack attack}
+
+\item {\bf A note on How to Access Program Counter and Instruction Register by C programming}\\
+\textbf{Supervisor:} Prof. Subhamoy Maitra, ISI Kolkata\hfill{Fall 2019}
+
+\item {\bf Robust model-based adjustments to GREG estimation when some responses are missing}\\
+\textbf{Supervisor:} Dr. Sumanta Adhya, WBSU\hfill{Spring 2018}\\
+\textbf{Purpose:} To study the robustness property of the GREG estimator in different cases when imputation was done by parametric and non-parametric regression and when data size is small
+\end{enumerate}
+
+\section{\sc Programming Skills}
+\textbf{Languages:} C, Python, R, HTML \quad
+\textbf{OS:} Linux \quad
+\textbf{Database \& Publishing:} MySQL, \LaTeX, Markdown\\
+\textbf{Libraries:} NumPy, Pandas, Scikit-learn, PyTorch, Opacus, NLTK, spaCy
+
+\section{\sc Personal Details}
+\textbf{Languages:} Bengali (Mother tongue), English, Hindi \quad
+\textbf{Gender:} Male \quad
+\textbf{Nationality:} Indian\\
+\textbf{Hobbies:} Violin, Indian Classical Music, Regional History
+
+\end{resume}
+\end{document}
