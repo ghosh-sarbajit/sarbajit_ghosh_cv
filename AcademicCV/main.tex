@@ -8,9 +8,16 @@
 \textwidth=6.35in
 \sectionskip=2.2ex plus .4ex minus .2ex
 
-\usepackage[pdftex]{graphicx}
+% Builds with pdflatex or xelatex (academicons >= 1.9.6 supports both)
+\usepackage{graphicx}
 \usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{academicons}
 \usepackage{hyperref}
+\hypersetup{hidelinks}
+
+% Clickable logo: \cvlink{icon}{url}
+\newcommand{\cvlink}[2]{\hspace{0.3em}\href{#2}{#1}}
 
 % ---- Tight lists everywhere ----
 \setlist{nosep}
@@ -26,11 +33,18 @@
 \name{Sarbajit Ghosh}\vspace*{-.15in}
 
 \begin{resume}
-\section{\sc Contact information}
-\begin{tabular}{@{}p{2.6in}l}
-Department of CSE, IIT Kanpur & {\it E-mail:} sarbajitg@cse.iitk.ac.in\\
- & {\it Publications:} \href{https://scholar.google.com/citations?user=AVrr4S8AAAAJ&hl=en&oi=ao}{Google Scholar}
-\end{tabular}
+\section{\sc Contact}
+Department of CSE, IIT Kanpur\hfill
+{\large
+\cvlink{\faEnvelope}{mailto:sarbajitg@cse.iitk.ac.in}
+\cvlink{\faGlobe}{https://ghosh-sarbajit.github.io/}
+\cvlink{\aiicon{googlescholar}}{https://scholar.google.com/citations?user=AVrr4S8AAAAJ}
+\cvlink{\aiicon{semantic-scholar}}{https://www.semanticscholar.org/author/Sarbajit-Ghosh/152709675}
+\cvlink{\aiicon{dblp}}{https://dblp.org/pid/350/8503.html}
+\cvlink{\aiicon{scopus}}{https://www.scopus.com/authid/detail.uri?authorId=58102872800}
+\cvlink{\aiicon{orcid}}{https://orcid.org/0009-0008-2477-586X}
+\cvlink{\faGithub}{https://github.com/ghosh-sarbajit}
+\cvlink{\faLinkedin}{https://www.linkedin.com/in/sarbajit-ghosh-a91b7a157/}}
 
 \section{\sc Career Vision}
 My research interest aligns with the interplay between \textbf{differential privacy} and \textbf{machine learning}. I like to apply my interdisciplinary background, as well as my abilities, to find creative solutions to complex problems. This way, I like to deeply engage myself in advancing the subject to make a real-world impact. My other interests lie in the broader spectrum of \textbf{privacy-preserving technologies} and \textbf{statistics}.
