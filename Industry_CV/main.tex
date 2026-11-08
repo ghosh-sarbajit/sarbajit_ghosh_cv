@@ -19,8 +19,15 @@
       \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
       \setlength{\leftmargin}{0.2in}}}{\end{list}}
 
-\usepackage[pdftex]{graphicx}
+% Builds with pdflatex or xelatex (academicons >= 1.9.6 supports both)
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{academicons}
 \usepackage{hyperref}
+\hypersetup{hidelinks}
+
+% Clickable logo: \cvlink{icon}{url}
+\newcommand{\cvlink}[2]{\hspace{0.3em}\href{#2}{#1}}
 
 
 \begin{document}
@@ -28,13 +35,19 @@
 \name{Sarbajit Ghosh\vspace*{.1in}}
 
 \begin{resume}
- \section{\sc Contact information}
-\vspace{.02in}
-\begin{tabular}{@{}p{2in}p{4in}}
-2/3 CNVR Lane,
-Bhatpara              &~~~~~~~~~ {\it Phone:}  (+91) 8100242571 \\            
-24 Pgs (N), West Bengal, India   &~~~~~~~~~ {\it E-mail:}  $gsarbajit@gmail.com$ \\        
-\end{tabular}
+\section{\sc Contact}
+Bhatpara, West Bengal, India\hfill
+{\large
+\cvlink{\faPhone}{tel:+918100242571}
+\cvlink{\faEnvelope}{mailto:gsarbajit@gmail.com}
+\cvlink{\faGlobe}{https://ghosh-sarbajit.github.io/}
+\cvlink{\aiicon{googlescholar}}{https://scholar.google.com/citations?user=AVrr4S8AAAAJ}
+\cvlink{\aiicon{semantic-scholar}}{https://www.semanticscholar.org/author/Sarbajit-Ghosh/152709675}
+\cvlink{\aiicon{dblp}}{https://dblp.org/pid/350/8503.html}
+\cvlink{\aiicon{scopus}}{https://www.scopus.com/authid/detail.uri?authorId=58102872800}
+\cvlink{\aiicon{orcid}}{https://orcid.org/0009-0008-2477-586X}
+\cvlink{\faGithub}{https://github.com/ghosh-sarbajit}
+\cvlink{\faLinkedin}{https://www.linkedin.com/in/sarbajit-ghosh-a91b7a157/}}
 
 
 \section{\sc Career ~~~~~~~~~~~~Vision}
